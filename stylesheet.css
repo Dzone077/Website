@@ -157,3 +157,100 @@ table tbody tr td td hr.soft {
   width: 100%;
   background-color: #dfdfdf
 }
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+}
+
+.results-carousel video {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+
+  .intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 0;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  .text-content {
+    padding: 2.5%;
+    width: 63%;
+    vertical-align: middle;
+    order: 1;
+  }
+
+  .image-content {
+    padding: 2.5%;
+    width: 37%;
+    max-width: 37%;
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-content img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .text-content,
+    .image-content {
+      width: 100%;
+      max-width: 100%;
+      order: 1;
+    }
+
+    .image-content {
+      order: 2;
+      display: flex;
+      justify-content: center;
+    }
+
+    .image-content img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
+  }
+
+  .carousel-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  #results-carousel {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #results-carousel .item video {
+    width: 100%;
+    max-height: 700px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .carousel-control.left,
+  .carousel-control.right {
+    background-image: none;
+  }
