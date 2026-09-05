@@ -255,17 +255,34 @@ table tbody tr td td hr.soft {
     background-image: none;
   }
 
-  /* ---- Projects section: Research + Selected Projects (redesign-v1-lean) ----
-     All rules scoped to #content-projects so the rest of the page is untouched. */
+  /* ---- Research section: Research + Selected Projects (redesign-v1-lean) ----
+     All rules scoped to #content-research so the rest of the page is untouched.
+     .research-heading-row styles only the collapsible toggle line itself. */
 
-  #content-projects,
-  #content-projects *,
-  #content-projects *::before,
-  #content-projects *::after {
+  .research-heading-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 24px;
+  }
+
+  .research-heading-row .research-subtitle {
+    margin: 0;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.48;
+    text-align: right;
+  }
+
+  #content-research,
+  #content-research *,
+  #content-research *::before,
+  #content-research *::after {
     box-sizing: border-box;
   }
 
-  #content-projects {
+  #content-research {
     --text: #222;
     --muted: #666;
     --rule: #e2e2e2;
@@ -279,21 +296,25 @@ table tbody tr td td hr.soft {
     line-height: 1.48;
   }
 
-  #content-projects img,
-  #content-projects video {
+  #content-research img,
+  #content-research video {
     max-width: 100%;
   }
 
-  #content-projects .site-section {
+  #content-research .site-section {
     padding: 28px 6px 32px;
     border-bottom: 1px solid var(--rule);
   }
 
-  #content-projects .site-section:last-child {
+  #content-research .site-section:first-child {
+    padding-top: 20px;
+  }
+
+  #content-research .site-section:last-child {
     border-bottom: 0;
   }
 
-  #content-projects .section-heading-row {
+  #content-research .section-heading-row {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -301,7 +322,7 @@ table tbody tr td td hr.soft {
     margin-bottom: 20px;
   }
 
-  #content-projects .section-heading-row h2 {
+  #content-research .section-heading-row h2 {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     margin: 0;
     font-size: 22px;
@@ -310,7 +331,7 @@ table tbody tr td td hr.soft {
     color: var(--text);
   }
 
-  #content-projects .section-heading-row p {
+  #content-research .section-heading-row p {
     margin: 0;
     color: var(--muted);
     font-size: 13px;
@@ -318,7 +339,7 @@ table tbody tr td td hr.soft {
     text-align: right;
   }
 
-  #content-projects .feature-project {
+  #content-research .feature-project {
     display: grid;
     grid-template-columns: 1.35fr 1fr;
     border: 1px solid var(--rule);
@@ -328,13 +349,13 @@ table tbody tr td td hr.soft {
     margin-bottom: 18px;
   }
 
-  #content-projects .feature-media {
+  #content-research .feature-media {
     min-width: 0;
     background: #f2f2f2;
     position: relative;
   }
 
-  #content-projects .feature-media video {
+  #content-research .feature-media video {
     display: block;
     width: 100%;
     height: 330px;
@@ -342,7 +363,7 @@ table tbody tr td td hr.soft {
     background: #111;
   }
 
-  #content-projects .media-tabs {
+  #content-research .media-tabs {
     display: flex;
     gap: 0;
     overflow-x: auto;
@@ -350,7 +371,7 @@ table tbody tr td td hr.soft {
     background: #fff;
   }
 
-  #content-projects .media-tab {
+  #content-research .media-tab {
     flex: 1 0 auto;
     border: 0;
     border-right: 1px solid #eee;
@@ -362,24 +383,24 @@ table tbody tr td td hr.soft {
     cursor: pointer;
   }
 
-  #content-projects .media-tab:hover {
+  #content-research .media-tab:hover {
     background: #f7f7f7;
   }
 
-  #content-projects .media-tab.active {
+  #content-research .media-tab.active {
     color: #111;
     font-weight: 700;
     box-shadow: inset 0 -2px 0 #333;
   }
 
-  #content-projects .feature-copy {
+  #content-research .feature-copy {
     padding: 28px 26px;
     align-self: center;
   }
 
-  #content-projects .feature-copy h3,
-  #content-projects .card-copy h3,
-  #content-projects .small-project h3 {
+  #content-research .feature-copy h3,
+  #content-research .card-copy h3,
+  #content-research .small-project h3 {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-weight: 700;
     line-height: 1.48;
@@ -387,18 +408,18 @@ table tbody tr td td hr.soft {
     margin-top: 0;
   }
 
-  #content-projects .feature-copy h3 {
+  #content-research .feature-copy h3 {
     font-size: 22px;
     margin-bottom: 12px;
   }
 
-  #content-projects .feature-copy p {
+  #content-research .feature-copy p {
     color: #444;
     font-size: 14px;
     margin: 1em 0;
   }
 
-  #content-projects .eyebrow {
+  #content-research .eyebrow {
     text-transform: uppercase;
     letter-spacing: .08em;
     font-size: 10px;
@@ -407,30 +428,30 @@ table tbody tr td td hr.soft {
     margin-bottom: 7px;
   }
 
-  #content-projects .project-links {
+  #content-research .project-links {
     margin: 18px 0 1em;
   }
 
-  #content-projects .research-grid {
+  #content-research .research-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
   }
 
-  #content-projects .research-card {
+  #content-research .research-card {
     border: 1px solid var(--rule);
     border-radius: 8px;
     overflow: hidden;
     background: var(--card);
   }
 
-  #content-projects .research-card-wide {
+  #content-research .research-card-wide {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr 1.6fr;
   }
 
-  #content-projects .card-media {
+  #content-research .card-media {
     min-height: 205px;
     display: flex;
     align-items: center;
@@ -440,16 +461,16 @@ table tbody tr td td hr.soft {
     text-align: center;
   }
 
-  #content-projects a.card-media:focus,
-  #content-projects a.card-media:hover {
+  #content-research a.card-media:focus,
+  #content-research a.card-media:hover {
     color: #222;
   }
 
-  #content-projects .placeholder-media {
+  #content-research .placeholder-media {
     color: #444;
   }
 
-  #content-projects .placeholder-media strong {
+  #content-research .placeholder-media strong {
     display: block;
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 21px;
@@ -457,30 +478,30 @@ table tbody tr td td hr.soft {
     margin-bottom: 5px;
   }
 
-  #content-projects .placeholder-media span {
+  #content-research .placeholder-media span {
     color: #858585;
     font-size: 12px;
   }
 
-  #content-projects .terrain-placeholder {
+  #content-research .terrain-placeholder {
     background:
       linear-gradient(150deg, transparent 0 41%, #d7dadd 41% 53%, transparent 53%),
       linear-gradient(160deg, #f7f7f7 0 50%, #eceff1 50%);
   }
 
-  #content-projects .morphology-placeholder {
+  #content-research .morphology-placeholder {
     background: #f5f5f5;
     padding: 22px;
   }
 
-  #content-projects .robot-list {
+  #content-research .robot-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 7px;
   }
 
-  #content-projects .robot-list span {
+  #content-research .robot-list span {
     color: #444;
     border: 1px solid #cfd3d7;
     border-radius: 99px;
@@ -489,49 +510,49 @@ table tbody tr td td hr.soft {
     font-size: 12px;
   }
 
-  #content-projects .fomo-media {
+  #content-research .fomo-media {
     flex-direction: column;
     gap: 10px;
     background: #fafafa;
   }
 
-  #content-projects .fomo-media img {
+  #content-research .fomo-media img {
     max-width: 115px;
     max-height: 115px;
     object-fit: contain;
   }
 
-  #content-projects .fomo-media span {
+  #content-research .fomo-media span {
     font-size: 12px;
     color: #666;
   }
 
-  #content-projects .card-copy {
+  #content-research .card-copy {
     padding: 20px;
   }
 
-  #content-projects .card-copy h3 {
+  #content-research .card-copy h3 {
     font-size: 18px;
     margin-bottom: 9px;
   }
 
-  #content-projects .card-copy p {
+  #content-research .card-copy p {
     color: #555;
     font-size: 14px;
     margin: 0 0 13px;
   }
 
-  #content-projects .project-grid {
+  #content-research .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
   }
 
-  #content-projects .small-project {
+  #content-research .small-project {
     min-width: 0;
   }
 
-  #content-projects .small-project-media {
+  #content-research .small-project-media {
     aspect-ratio: 4 / 3;
     border: 1px solid var(--rule);
     background: #f5f6f7;
@@ -543,18 +564,18 @@ table tbody tr td td hr.soft {
     color: #555;
   }
 
-  #content-projects .small-project-media span {
+  #content-research .small-project-media span {
     font-size: 27px;
     letter-spacing: .06em;
     color: #333;
   }
 
-  #content-projects .small-project-media small {
+  #content-research .small-project-media small {
     margin-top: 7px;
     color: #999;
   }
 
-  #content-projects .rrt-media {
+  #content-research .rrt-media {
     background-image:
       radial-gradient(circle at 25% 70%, #d2d5d8 0 2px, transparent 3px),
       radial-gradient(circle at 55% 45%, #d2d5d8 0 2px, transparent 3px),
@@ -562,41 +583,41 @@ table tbody tr td td hr.soft {
     background-color: #f5f6f7;
   }
 
-  #content-projects .small-project h3 {
+  #content-research .small-project h3 {
     font-size: 16px;
     margin-bottom: 5px;
   }
 
-  #content-projects .small-project p {
+  #content-research .small-project p {
     color: #666;
     font-size: 13px;
     margin: 0 0 1em;
   }
 
   @media screen and (max-width: 760px) {
-    #content-projects .feature-project,
-    #content-projects .research-card-wide {
+    #content-research .feature-project,
+    #content-research .research-card-wide {
       grid-template-columns: 1fr;
     }
 
-    #content-projects .feature-media video {
+    #content-research .feature-media video {
       height: 290px;
     }
 
-    #content-projects .research-grid,
-    #content-projects .project-grid {
+    #content-research .research-grid,
+    #content-research .project-grid {
       grid-template-columns: 1fr;
     }
 
-    #content-projects .research-card-wide {
+    #content-research .research-card-wide {
       grid-column: auto;
     }
 
-    #content-projects .section-heading-row {
+    #content-research .section-heading-row {
       display: block;
     }
 
-    #content-projects .section-heading-row p {
+    #content-research .section-heading-row p {
       text-align: left;
       margin-top: 5px;
     }
