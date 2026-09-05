@@ -7,7 +7,7 @@
 
   <title>Duarte Santos</title>
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=3">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=8">
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,7 +16,7 @@
   <meta name="author" content="Duarte Santos">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=3">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=8">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
   <style>
@@ -278,13 +278,14 @@
               </article>
 
               <article class="research-card research-card-wide">
-                <div class="card-media fomo-media">
-                  <img src="images/University_of_Texas_at_Austin_seal.svg.png" alt="University of Texas at Austin seal">
-                  <span>ISR-Lisboa × UT Austin</span>
+                <div class="card-media">
+                  <video controls loop playsinline preload="metadata">
+                    <source src="images/research/receptionist-web.mp4" type="video/mp4">
+                  </video>
                 </div>
                 <div class="card-copy">
                   <div class="eyebrow">Research Project</div>
-                  <h3>FOMO-HODOR — Humanoid Domestic Robotics</h3>
+                  <h3><img class="inline-logo" src="images/University_of_Texas_at_Austin_seal.svg.png" alt="UT Austin">FOMO-HODOR — Humanoid Domestic Robotics</h3>
                   <p>
                     Joint Lisbon–Austin work on the Booster T1 as an autonomous service robot, spanning navigation,
                     manipulation, speech-based interaction, task execution, and language-model-based planning for RoboCup@Home.
@@ -292,6 +293,29 @@
                   <a href="https://irsgroup.isr.tecnico.ulisboa.pt/fomo-hodor/">Project website →</a>
                 </div>
               </article>
+
+              <article class="research-card research-card-wide">
+                <div class="card-media placeholder-media">
+                  <!-- Replace this whole div with:
+                       <video autoplay muted loop playsinline preload="metadata">
+                         <source src="images/research/YOUR_VIDEO.mp4" type="video/mp4">
+                       </video> -->
+                  <div>
+                    <strong>SocRob @Home</strong>
+                    <span>Add project video</span>
+                  </div>
+                </div>
+                <div class="card-copy">
+                  <div class="eyebrow">Research Group</div>
+                  <h3><img class="inline-logo" src="images/socrob_home_logo.png" alt="">SocRob @Home — Humanoid Domestic Robotics</h3>
+                  <p>
+                    Joint Lisbon–Austin work on the Booster T1 as an autonomous service robot, spanning navigation,
+                    manipulation, speech-based interaction, task execution, and language-model-based planning for RoboCup@Home.
+                  </p>
+                  <a href="https://irsgroup.isr.tecnico.ulisboa.pt/fomo-hodor/">Project website →</a>
+                </div>
+              </article>
+
             </div>
             </section>
 
@@ -304,8 +328,9 @@
             <div class="project-grid">
               <article class="small-project">
                 <div class="small-project-media">
-                  <span>SLAM</span>
-                  <small>Add TurtleBot mapping video</small>
+                  <video controls loop playsinline preload="metadata">
+                    <source src="images/research/fastslam.mp4" type="video/mp4">
+                  </video>
                 </div>
                 <h3>TurtleBot SLAM</h3>
                 <p>Implementation and evaluation of SLAM and autonomous mapping on a TurtleBot platform.</p>
@@ -499,10 +524,40 @@
         });
       }
 
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initMediaTabs);
-      } else {
+      function initFullscreen() {
+        var scope = document.getElementById('content-research');
+        if (!scope) return;
+
+        scope.addEventListener('dblclick', function (event) {
+          var el = event.target;
+          if (!el || el.tagName !== 'VIDEO') return;
+
+          var doc = document;
+          var isFull = doc.fullscreenElement || doc.webkitFullscreenElement;
+          if (isFull) {
+            if (doc.exitFullscreen) doc.exitFullscreen();
+            else if (doc.webkitExitFullscreen) doc.webkitExitFullscreen();
+            return;
+          }
+
+          var req = el.requestFullscreen || el.webkitRequestFullscreen ||
+                    el.webkitEnterFullscreen;
+          if (req) {
+            var r = req.call(el);
+            if (r && typeof r.catch === 'function') r.catch(function () {});
+          }
+        });
+      }
+
+      function init() {
         initMediaTabs();
+        initFullscreen();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
       }
     })();
   </script>
