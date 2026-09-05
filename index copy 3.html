@@ -7,7 +7,7 @@
 
   <title>Duarte Santos</title>
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=2">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,7 +16,7 @@
   <meta name="author" content="Duarte Santos">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=2">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
   <style>
@@ -211,126 +211,110 @@
           </button>
           <div id="content-projects" class="collapse in">
 
-            <section class="site-section" id="research">
-            <div class="section-heading-row">
-              <h2>Research</h2>
-              <p>Current work in humanoid robotics and autonomous robot systems.</p>
-            </div>
+            <table border=0 class="bg_colour"
+              style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
 
-            <article class="feature-project">
-              <div class="feature-media">
-                <video id="locomotion-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="images/research/rested.mp4" type="video/mp4">
-                </video>
-                <div class="media-tabs" role="group" aria-label="Humanoid locomotion videos">
-                  <button class="media-tab active" data-video="images/research/rested.mp4">Legged</button>
-                  <button class="media-tab" data-video="images/research/wholebody.mp4">Whole body</button>
-                  <button class="media-tab" data-video="images/research/wholebodyall.mp4">Whole-body study</button>
-                  <button class="media-tab" data-video="images/research/real_t1.mp4">Real T1</button>
-                </div>
-              </div>
-              <div class="feature-copy">
-                <div class="eyebrow">M.Sc. Thesis</div>
-                <h3>Learning-Based Humanoid Locomotion</h3>
-                <p>
-                  A progressive study of legged, whole-body, and human-reference-enhanced locomotion,
-                  cross-validated across MuJoCo, Isaac and Webots and deployed on a physical Booster T1.
-                </p>
-                <p class="project-links">
-                  <a href="https://dzone077.github.io/Project-Page/#locomotion">Project page</a>
-                </p>
-              </div>
-            </article>
+                <tr>
+                  <td style="padding:10px;width:30%;vertical-align:middle;text-align:center">
+                    <img src='images/IST_Logo.png' style="max-width:220px; max-height:120px;">
+                  </td>
+                  <td style="padding:10px;width:70%;vertical-align:top">
+                    <papertitle style="color:gray"><big>Motion Controller for Natural and Robust Humanoid Locomotion using Reinforcement Learning</big> </papertitle>
+                    <papertitle><big> | Masters Thesis</big></papertitle>
+                    <br>
+                    <br>
+                    <ul>
+                      <li>GPA: 18.3 / 20</li>
+                      <li>Relevant Coursework: Model Predictive Control, Autonomous Systems, Machine Learning, Computer Vision</li>
+                    </ul>
+                  </td>
+                </tr>
 
-            <div class="research-grid">
-              <article class="research-card">
-                <a class="card-media placeholder-media terrain-placeholder" href="https://dzone077.github.io/Project-Page/#terrain" aria-label="Terrain-aware humanoid locomotion project">
-                  <div>
-                    <strong>Ascent · Descent</strong>
-                    <span>Replace with stair footage</span>
-                  </div>
-                </a>
-                <div class="card-copy">
-                  <div class="eyebrow">M.Sc. Thesis</div>
-                  <h3>Terrain-Aware Stair Locomotion</h3>
-                  <p>
-                    Heightmap-conditioned stair ascent and descent with controlled approach, swing-foot clearance,
-                    deliberate tread placement, and adaptation to varying step geometry.
-                  </p>
-                  <a href="https://dzone077.github.io/Project-Page/#terrain">View thesis section →</a>
-                </div>
-              </article>
 
-              <article class="research-card">
-                <a class="card-media placeholder-media morphology-placeholder" href="https://dzone077.github.io/Project-Page/#cross-embodiment" aria-label="Cross-embodiment humanoid locomotion project">
-                  <div class="robot-list">
-                    <span>T1</span><span>K1</span><span>G1</span><span>Kangaroo</span><span>GR3</span><span>A3</span><span>DR02</span>
-                  </div>
-                </a>
-                <div class="card-copy">
-                  <div class="eyebrow">M.Sc. Thesis</div>
-                  <h3>Cross-Embodiment Humanoid Motion</h3>
-                  <p>
-                    Transfer of the locomotion, reference-motion, and terrain framework to six additional humanoid
-                    platforms for cross-embodiment validation and morphology analysis.
-                  </p>
-                  <a href="https://dzone077.github.io/Project-Page/#cross-embodiment">View thesis section →</a>
-                </div>
-              </article>
 
-              <article class="research-card research-card-wide">
-                <div class="card-media fomo-media">
-                  <img src="images/University_of_Texas_at_Austin_seal.svg.png" alt="University of Texas at Austin seal">
-                  <span>ISR-Lisboa × UT Austin</span>
-                </div>
-                <div class="card-copy">
-                  <div class="eyebrow">Research Project</div>
-                  <h3>FOMO-HODOR — Humanoid Domestic Robotics</h3>
-                  <p>
-                    Joint Lisbon–Austin work on the Booster T1 as an autonomous service robot, spanning navigation,
-                    manipulation, speech-based interaction, task execution, and language-model-based planning for RoboCup@Home.
-                  </p>
-                  <a href="https://irsgroup.isr.tecnico.ulisboa.pt/fomo-hodor/">Project website →</a>
-                </div>
-              </article>
-            </div>
-            </section>
 
-            <section class="site-section" id="selected-projects">
-            <div class="section-heading-row">
-              <h2>Selected Projects</h2>
-              <p>Course and independent work across mapping, manipulation and motion planning.</p>
-            </div>
 
-            <div class="project-grid">
-              <article class="small-project">
-                <div class="small-project-media">
-                  <span>SLAM</span>
-                  <small>Add TurtleBot mapping video</small>
-                </div>
-                <h3>TurtleBot SLAM</h3>
-                <p>Implementation and evaluation of SLAM and autonomous mapping on a TurtleBot platform.</p>
-              </article>
 
-              <article class="small-project">
-                <div class="small-project-media">
-                  <span>TIAGo</span>
-                  <small>Add Gazebo manipulation video</small>
-                </div>
-                <h3>TIAGo Manipulation</h3>
-                <p>Manipulation work using the TIAGo Steel platform in Gazebo for a robotics course project.</p>
-              </article>
 
-              <article class="small-project">
-                <div class="small-project-media rrt-media">
-                  <span>RRT</span>
-                  <small>Add planning animation</small>
-                </div>
-                <h3>Sampling-Based Motion Planning</h3>
-                <p>Implementation of Rapidly-exploring Random Trees for collision-free planning in a simplified environment.</p>
-              </article>
-            </div>
-            </section>
+
+<tr>
+  <td colspan="2" style="padding:20px 10px;">
+    <div class="carousel-wrapper">
+      <div id="results-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <video autoplay controls muted loop playsinline>
+              <source src="./images/SceneSIRFS.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video autoplay controls muted loop playsinline>
+              <source src="./images/SceneSIRFS.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item">
+            <video autoplay controls muted loop playsinline>
+              <source src="./images/SceneSIRFS.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <a class="left carousel-control" href="#results-carousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#results-carousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding:10px;width:30%;vertical-align:middle;text-align:center">
+    <img src="images/IST_Logo.png" style="max-width:220px; max-height:120px;">
+  </td>
+  <td style="padding:10px;width:70%;vertical-align:top">
+    <papertitle style="color:gray"><big>B.Sc. in Electrical and Computer Engineering</big></papertitle>
+    <papertitle><big> | Instituto Superior Técnico (IST), University of Lisbon</big></papertitle>
+    <br>
+    Sep 2020 - Jul 2023
+  </td>
+</tr>
+
+
+                <tr>
+                  <td style="padding:10px;width:30%;vertical-align:middle;text-align:center">
+                    <img src='images/kth_logo.png' style="max-width:220px; max-height:130px;">
+                  </td>
+                  <td style="padding:10px;width:70%;vertical-align:top">
+                    <papertitle style="color:gray"><big>Exchange Studies, Systems, Controls and Robotics</big> </papertitle>
+                    <papertitle><big> | KTH Royal Institute of Technology</big></papertitle>
+                    <br>
+                    Aug 2024 - Jan 2025 (Stockholm, Sweden)
+                    <br>
+                    <br>
+                    <ul>
+                      <li>Obtained the maximum grade of A</li>
+                      <li>Relevant Coursework: Reinforcement Learning, Artificial Neural Networks and Architectures, Safe Robot Planning, Introduction to Robotics</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:10px;width:30%;vertical-align:middle;text-align:center">
+                    <img src='images/IST_Logo.png' style="max-width:220px; max-height:120px;">
+                  </td>
+                  <td style="padding:10px;width:70%;vertical-align:center">
+                    <papertitle style="color:gray"><big>B.Sc. in Electrical and Computer Engineering</big> </papertitle>
+                    <papertitle><big> | Instituto Superior Técnico (IST), University of Lisbon</big></papertitle>
+                    <br>
+                    Sep 2020 - Jul 2023
+  
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <hr class="soft">
 
@@ -464,49 +448,6 @@
   </td>
   </tr>
   </table>
-
-  <script>
-    (function () {
-      function initMediaTabs() {
-        var video = document.getElementById('locomotion-video');
-        var tabList = document.querySelector('.media-tabs');
-        if (!video || !tabList) return;
-
-        tabList.addEventListener('click', function (event) {
-          var el = event.target;
-          var tab = el && el.closest ? el.closest('.media-tab') : null;
-          if (!tab || !tabList.contains(tab)) return;
-
-          var src = tab.getAttribute('data-video');
-          if (!src) return;
-
-          var all = tabList.querySelectorAll('.media-tab');
-          for (var i = 0; i < all.length; i++) {
-            all[i].classList.remove('active');
-          }
-          tab.classList.add('active');
-
-          // Set both the src attribute and the <source> child, so the media
-          // resource selection algorithm picks up the new file either way.
-          var child = video.querySelector('source');
-          if (child) child.setAttribute('src', src);
-          video.setAttribute('src', src);
-          video.load();
-
-          var played = video.play();
-          if (played && typeof played.catch === 'function') {
-            played.catch(function () {});
-          }
-        });
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initMediaTabs);
-      } else {
-        initMediaTabs();
-      }
-    })();
-  </script>
 
 </body>
 
