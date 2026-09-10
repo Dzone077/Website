@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Duarte Santos — Research collection options</title>
+ <link rel="stylesheet" href="research.css">
+ <script src="bundle.js" defer></script>
+</head>
+<body>
+ <header class="explorer-header">
+  <div class="header-top"><a href="../index.html" class="brand">Duarte Santos <span>/ research collection</span></a><div class="appearance"><fieldset><legend class="sr-only">Accent color</legend><button class="swatch orange" data-accent="orange" aria-label="UT Austin burnt orange" aria-pressed="true"></button><button class="swatch red" data-accent="red" aria-label="Red sampled from the ISR logo" aria-pressed="false"></button></fieldset><button class="small-action" id="phone" aria-pressed="false">Phone preview</button></div></div>
+  <div class="intro"><h1>A clearer way to explore the work.</h1><p>Four layouts for the full collection. Choose an option, then explore the controllers, motion stages, robots, and terrain.</p></div>
+ </header>
+ <div class="option-bar"><nav id="layout-options" aria-label="Layout options"></nav></div>
+ <main class="explorer-main">
+  <div class="option-description"><div><h2 id="option-title"></h2><p id="option-copy"></p></div><span id="option-use"></span></div>
+  <aside class="preview-notice"><span class="notice-dot"></span><p>Interactive layout preview. Existing T1 clips are marked as samples; the expanded collection has not been linked yet.</p><button id="open-map">View collection structure <span aria-hidden="true">↗</span></button></aside>
+  <div id="canvas" class="canvas"><div id="app"></div></div>
+  <p class="gallery-foot">Try both accent colors. The same collection is available in every option; the navigation changes.</p>
+ </main>
+ <dialog id="evidence-dialog" class="evidence-dialog"><div class="dialog-bar"><div><span class="dialog-eyebrow">Research collection</span><h2>Explore the evidence</h2></div><button class="icon-button" data-close="evidence-dialog" aria-label="Close evidence viewer">×</button></div><div id="evidence-content"></div></dialog>
+ <dialog id="map-dialog" class="map-dialog"><div class="dialog-bar"><div><span class="dialog-eyebrow">Your footage</span><h2>Collection structure</h2></div><button class="icon-button" data-close="map-dialog" aria-label="Close collection structure">×</button></div><div class="map-content">
+  <div class="map-group"><h3>Booster T1 · Locomotion</h3><p><b>Legged:</b> raised arms / rested arms → MuJoCo, Isaac, real robot.</p><p><b>Whole body:</b> one configuration → MuJoCo, Isaac, real robot.</p></div>
+  <div class="map-group"><h3>Reference motion · Every robot</h3><p>Source recording → retargeted motion → trained policy.</p><p>Retargeting and policy: MuJoCo / Isaac. The T1 policy also has real deployment.</p></div>
+  <div class="map-group"><h3>Other humanoids · Whole-body control</h3><p>K1, G1, Kangaroo, GR3, A3, DR02 → MuJoCo / Isaac.</p></div>
+  <div class="map-group"><h3>Terrain · Every robot</h3><p>Ascent / descent → MuJoCo / Isaac.</p></div>
+  <p class="map-note">Source recordings are kept distinct from retargeted motion and trained policies. Real deployment is offered only for T1 locomotion and its reference-trained policy.</p>
+ </div></dialog>
+ <noscript><p style="padding:30px">Enable JavaScript to explore the interactive layout options.</p></noscript>
+</body>
+</html>

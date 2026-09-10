@@ -1,0 +1,24 @@
+{"timestamp":27654868,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"loadfail_reason":"File doesn't exist.","glean_timestamp":"1788719052253","path_key":"clean","can_load":"false"}}
+{"timestamp":27654883,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"can_load":"false","path_key":"recovery","loadfail_reason":"File doesn't exist.","glean_timestamp":"1788719052267"}}
+{"timestamp":27654884,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"loadfail_reason":"File doesn't exist.","path_key":"recoveryBackup","can_load":"false","glean_timestamp":"1788719052269"}}
+{"timestamp":27654902,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"can_load":"false","glean_timestamp":"1788719052286","path_key":"cleanBackup","loadfail_reason":"File doesn't exist."}}
+{"timestamp":27654912,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"glean_timestamp":"1788719052296","loadfail_reason":"File doesn't exist.","can_load":"false","path_key":"clean"}}
+{"timestamp":27654913,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"path_key":"recovery","can_load":"false","loadfail_reason":"File doesn't exist.","glean_timestamp":"1788719052298"}}
+{"timestamp":27654934,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"glean_timestamp":"1788719052319","can_load":"false","path_key":"recoveryBackup","loadfail_reason":"File doesn't exist."}}
+{"timestamp":27654936,"category":"session_restore","name":"backup_can_be_loaded_session_file","extra":{"can_load":"false","loadfail_reason":"File doesn't exist.","glean_timestamp":"1788719052321","path_key":"cleanBackup"}}
+{"timestamp":27655240,"category":"jsonfile","name":"load_logins","extra":{"glean_timestamp":"1788719052625","value":"error_notfounderror"}}
+{"timestamp":27655256,"category":"nimbus_events","name":"migration","extra":{"duration":"1","migration_id":"multi-phase-migrations","glean_timestamp":"1788719052641","is_first_startup":"false","success":"true"}}
+{"timestamp":27655256,"category":"nimbus_events","name":"migration","extra":{"success":"true","duration":"1","migration_id":"separate-rollout-opt-out","is_first_startup":"false","glean_timestamp":"1788719052641"}}
+{"timestamp":27655364,"category":"containers","name":"container_profile_loaded","extra":{"containers":"4","glean_timestamp":"1788719052749"}}
+{"timestamp":27655396,"category":"nimbus_events","name":"migration","extra":{"migration_id":"noop","glean_timestamp":"1788719052781","success":"true","is_first_startup":"false","duration":"1"}}
+{"timestamp":27655396,"category":"nimbus_events","name":"migration","extra":{"is_first_startup":"false","duration":"1","success":"true","migration_id":"noop","glean_timestamp":"1788719052781"}}
+{"timestamp":27655396,"category":"nimbus_events","name":"migration","extra":{"migration_id":"import-enrollments-to-sql","glean_timestamp":"1788719052781","duration":"1","is_first_startup":"false","success":"true"}}
+{"timestamp":27655396,"category":"nimbus_events","name":"migration","extra":{"success":"true","glean_timestamp":"1788719052781","duration":"1","migration_id":"graduate-firefox-labs-auto-pip","is_first_startup":"false"}}
+{"timestamp":27655396,"category":"nimbus_events","name":"migration","extra":{"success":"true","is_first_startup":"false","duration":"1","glean_timestamp":"1788719052781","migration_id":"graduate-firefox-labs-jpeg-xl"}}
+{"timestamp":27655396,"category":"nimbus_events","name":"migration","extra":{"is_first_startup":"false","duration":"1","glean_timestamp":"1788719052781","migration_id":"bug-2054546-mitigation","success":"true"}}
+{"timestamp":27655444,"category":"jsonfile","name":"load_autofillprofiles","extra":{"value":"error_notfounderror","glean_timestamp":"1788719052829"}}
+{"timestamp":27655481,"category":"nimbus_events","name":"remote_settings_sync_error","extra":{"trigger":"enabled","collection":"nimbus-desktop-experiments","reason":"get-exception","glean_timestamp":"1788719052866","force_sync":"false"}}
+{"timestamp":27655482,"category":"nimbus_events","name":"is_ready","extra":{"glean_timestamp":"1788719052867"}}
+{"timestamp":27655484,"category":"nimbus_events","name":"migration","extra":{"is_first_startup":"false","duration":"2","migration_id":"firefox-labs-enrollments","success":"true","glean_timestamp":"1788719052868"}}
+{"timestamp":27655522,"category":"upgrade_dialog","name":"trigger_reason","extra":{"value":"not-major","glean_timestamp":"1788719052906"}}
+{"timestamp":27655649,"category":"glean","name":"session_start","extra":{"session_id":"32ee0220-9f6b-48f1-9d75-fdfacc9d4826","glean_timestamp":"27655649","session_start_time":"2026-09-06T19:24:13.034+01:00","session_seq":"1","sampled_in":"true"}}

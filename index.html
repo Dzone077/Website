@@ -7,7 +7,7 @@
 
   <title>Duarte Santos</title>
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=8">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=15">
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,7 +16,7 @@
   <meta name="author" content="Duarte Santos">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=8">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=15">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
   <style>
@@ -219,13 +219,13 @@
             <article class="feature-project">
               <div class="feature-media">
                 <video id="locomotion-video" autoplay muted loop playsinline preload="metadata">
-                  <source src="images/research/rested.mp4" type="video/mp4">
+                  <source src="images/research/real_t1.mp4" type="video/mp4">
                 </video>
                 <div class="media-tabs" role="group" aria-label="Humanoid locomotion videos">
-                  <button class="media-tab active" data-video="images/research/rested.mp4">Legged</button>
-                  <button class="media-tab" data-video="images/research/wholebody.mp4">Whole body</button>
-                  <button class="media-tab" data-video="images/research/wholebodyall.mp4">Whole-body study</button>
-                  <button class="media-tab" data-video="images/research/real_t1.mp4">Real T1</button>
+                  <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/rested.mp4">Legged</button>
+                  <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/wholebody.mp4">Whole-Body</button>
+                  <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/wholebodyall.mp4">Reference Motion Fine-Tuning</button>
+                  <button class="media-tab active" type="button" aria-pressed="true" data-video="images/research/real_t1.mp4">Deployment</button>
                 </div>
               </div>
               <div class="feature-copy">
@@ -243,12 +243,11 @@
 
             <div class="research-grid">
               <article class="research-card">
-                <a class="card-media placeholder-media terrain-placeholder" href="https://dzone077.github.io/Project-Page/#terrain" aria-label="Terrain-aware humanoid locomotion project">
-                  <div>
-                    <strong>Ascent · Descent</strong>
-                    <span>Replace with stair footage</span>
-                  </div>
-                </a>
+                <div class="card-media card-media-fit">
+                  <video autoplay muted loop playsinline preload="metadata">
+                    <source src="images/research/terrain/t1-stairs.mp4" type="video/mp4">
+                  </video>
+                </div>
                 <div class="card-copy">
                   <div class="eyebrow">M.Sc. Thesis</div>
                   <h3>Terrain-Aware Stair Locomotion</h3>
@@ -261,11 +260,19 @@
               </article>
 
               <article class="research-card">
-                <a class="card-media placeholder-media morphology-placeholder" href="https://dzone077.github.io/Project-Page/#cross-embodiment" aria-label="Cross-embodiment humanoid locomotion project">
-                  <div class="robot-list">
-                    <span>T1</span><span>K1</span><span>G1</span><span>Kangaroo</span><span>GR3</span><span>A3</span><span>DR02</span>
+                <div class="card-media card-media-fit card-media-tabbed">
+                  <video id="morphology-video" autoplay muted loop playsinline preload="metadata">
+                    <source src="images/research/robots/gr3.mp4" type="video/mp4">
+                  </video>
+                  <div class="media-tabs" data-video-target="morphology-video" role="group" aria-label="Cross-embodiment robot videos">
+                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/g1.mp4"><span class="tab-brand">Unitree</span>G1</button>
+                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/k1.mp4"><span class="tab-brand">Booster</span>K1</button>
+                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/kangaroo.mp4"><span class="tab-brand">PAL</span>Kangaroo</button>
+                    <button class="media-tab active" type="button" aria-pressed="true" data-video="images/research/robots/gr3.mp4"><span class="tab-brand">Fourier</span>GR3</button>
+                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/a3.mp4"><span class="tab-brand">Agibot</span>A3</button>
+                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/dr02.mp4"><span class="tab-brand">DeepRobotics</span>DR02</button>
                   </div>
-                </a>
+                </div>
                 <div class="card-copy">
                   <div class="eyebrow">M.Sc. Thesis</div>
                   <h3>Cross-Embodiment Humanoid Motion</h3>
@@ -337,9 +344,8 @@
               </article>
 
               <article class="small-project">
-                <div class="small-project-media">
-                  <span>TIAGo</span>
-                  <small>Add Gazebo manipulation video</small>
+                <div class="small-project-media tiago-media">
+                  <img src="images/projects/tiago.jpg" alt="Top-down Gazebo view of the TIAGo Steel robot reaching over a table">
                 </div>
                 <h3>TIAGo Manipulation</h3>
                 <p>Manipulation work using the TIAGo Steel platform in Gazebo for a robotics course project.</p>
@@ -347,8 +353,7 @@
 
               <article class="small-project">
                 <div class="small-project-media rrt-media">
-                  <span>RRT</span>
-                  <small>Add planning animation</small>
+                  <img src="images/projects/rrt.png" alt="Grid of RRT planning runs: sampled trees and resulting collision-free paths">
                 </div>
                 <h3>Sampling-Based Motion Planning</h3>
                 <p>Implementation of Rapidly-exploring Random Trees for collision-free planning in a simplified environment.</p>
@@ -492,9 +497,21 @@
   <script>
     (function () {
       function initMediaTabs() {
-        var video = document.getElementById('locomotion-video');
-        var tabList = document.querySelector('.media-tabs');
-        if (!video || !tabList) return;
+        // Every .media-tabs strip drives the video named by data-video-target,
+        // falling back to the one sitting next to it in the same media panel.
+        var lists = document.querySelectorAll('.media-tabs');
+
+        for (var n = 0; n < lists.length; n++) {
+          bindMediaTabs(lists[n]);
+        }
+      }
+
+      function bindMediaTabs(tabList) {
+        var targetId = tabList.getAttribute('data-video-target');
+        var video = targetId
+          ? document.getElementById(targetId)
+          : tabList.parentNode.querySelector('video');
+        if (!video) return;
 
         tabList.addEventListener('click', function (event) {
           var el = event.target;
@@ -507,8 +524,10 @@
           var all = tabList.querySelectorAll('.media-tab');
           for (var i = 0; i < all.length; i++) {
             all[i].classList.remove('active');
+            all[i].setAttribute('aria-pressed', 'false');
           }
           tab.classList.add('active');
+          tab.setAttribute('aria-pressed', 'true');
 
           // Set both the src attribute and the <source> child, so the media
           // resource selection algorithm picks up the new file either way.
