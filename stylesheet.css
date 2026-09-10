@@ -620,10 +620,10 @@ table tbody tr td td hr.soft {
   }
 
   /* the RRT figure is a 12-panel plot - cropping it would cut panels and the
-     axis labels off, so it is shown whole on a ground matching its own border */
+     axis labels off, so it is shown whole. The figure's own ground is pure
+     white, so the tile matches it and the contain bars stay invisible. */
   #content-research .rrt-media {
-    background-color: #212121;
-    border-color: #212121;
+    background: #fff;
   }
 
   #content-research .rrt-media img {
