@@ -502,6 +502,20 @@ table tbody tr td td hr.soft {
     font-size: 12px;
   }
 
+  /* YouTube player filling the panel; the player letterboxes the video itself */
+  #content-research .card-media-embed {
+    position: relative;
+    background: #111;
+  }
+
+  #content-research .card-media-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
   /* card panel that carries its own video + robot picker below it */
   #content-research .card-media-tabbed {
     background: #fff;
