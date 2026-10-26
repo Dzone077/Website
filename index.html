@@ -223,9 +223,10 @@
                 </video>
                 <div class="media-tabs" role="group" aria-label="Humanoid locomotion videos">
                   <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/rested.mp4">Legged</button>
-                  <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/wholebody.mp4">Whole-Body</button>
-                  <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/wholebodyall.mp4">Reference Motion Fine-Tuning</button>
+                  <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/wholebody.mp4">Whole&#8209;Body</button>
+                  <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/wholebodyall.mp4">Reference Motion Fine&#8209;Tuning</button>
                   <button class="media-tab active" type="button" aria-pressed="true" data-video="images/research/real_t1.mp4">Deployment</button>
+                  <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/pipeline/mocap-to-deployment.mp4">Full Pipeline</button>
                 </div>
               </div>
               <div class="feature-copy">
@@ -245,7 +246,7 @@
               <article class="research-card">
                 <div class="card-media card-media-fit">
                   <video autoplay muted loop playsinline preload="metadata">
-                    <source src="images/research/terrain/t1-stairs.mp4" type="video/mp4">
+                    <source src="images/research/terrain/t1-updown.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="card-copy">
@@ -262,15 +263,16 @@
               <article class="research-card">
                 <div class="card-media card-media-fit card-media-tabbed">
                   <video id="morphology-video" autoplay muted loop playsinline preload="metadata">
-                    <source src="images/research/robots/gr3.mp4" type="video/mp4">
+                    <source src="images/research/robots/all-stairs.mp4" type="video/mp4">
                   </video>
                   <div class="media-tabs" data-video-target="morphology-video" role="group" aria-label="Cross-embodiment robot videos">
-                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/g1.mp4"><span class="tab-brand">Unitree</span>G1</button>
-                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/k1.mp4"><span class="tab-brand">Booster</span>K1</button>
-                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/kangaroo.mp4"><span class="tab-brand">PAL</span>Kangaroo</button>
-                    <button class="media-tab active" type="button" aria-pressed="true" data-video="images/research/robots/gr3.mp4"><span class="tab-brand">Fourier</span>GR3</button>
-                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/a3.mp4"><span class="tab-brand">Agibot</span>A3</button>
-                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/dr02.mp4"><span class="tab-brand">DeepRobotics</span>DR02</button>
+                    <button class="media-tab media-tab-all active" type="button" aria-pressed="true" data-video="images/research/robots/all-stairs.mp4"><span class="tab-brand">Stair Climbing</span>All Six Robots</button>
+                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/g1.mp4?v=2"><span class="tab-brand">Unitree</span>G1</button>
+                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/k1.mp4?v=2"><span class="tab-brand">Booster</span>K1</button>
+                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/kangaroo.mp4?v=2"><span class="tab-brand">PAL</span>Kangaroo</button>
+                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/gr3.mp4?v=2"><span class="tab-brand">Fourier</span>GR3</button>
+                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/a3.mp4?v=2"><span class="tab-brand">Agibot</span>A3</button>
+                    <button class="media-tab" type="button" aria-pressed="false" data-video="images/research/robots/dr02.mp4?v=2"><span class="tab-brand">DeepRobotics</span>DR02</button>
                   </div>
                 </div>
                 <div class="card-copy">
@@ -281,6 +283,24 @@
                     platforms for cross-embodiment validation and morphology analysis.
                   </p>
                   <a href="https://dzone077.github.io/Project-Page/#cross-embodiment">View thesis section →</a>
+                </div>
+              </article>
+
+              <article class="research-card research-card-wide">
+                <div class="card-media card-media-contain">
+                  <video autoplay muted loop playsinline preload="metadata">
+                    <source src="images/research/retarget/mocap-to-library.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="card-copy">
+                  <div class="eyebrow">M.Sc. Thesis</div>
+                  <h3>Motion Retargeting &amp; Reference Library</h3>
+                  <p>
+                    Optical motion-capture recordings retargeted to the Booster T1 and six other humanoids with
+                    morphology-optimized, contact-preserving retargeting, then processed into the motion library that
+                    the reference-motion policies learn from.
+                  </p>
+                  <a href="https://dzone077.github.io/Project-Page/#retargeting">View thesis section →</a>
                 </div>
               </article>
 
